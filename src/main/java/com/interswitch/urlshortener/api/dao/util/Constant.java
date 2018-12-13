@@ -7,7 +7,7 @@ public class Constant {
     public static final String COUNT = "count";
     public static final String CREATED_AT = "createdDate";
     public static final String LAST_ACCESSED_AT = "modifiedDate";
-    public static final String INSERT_QUERY = "insert into Url (" + LONGURL
+    public static final String INSERT_QUERY = "INSERT INTO Url (" + LONGURL
             + "," + SHORTURL + "," + CREATED_AT + "," + LAST_ACCESSED_AT + ","
             + COUNT + ") values (?, ?, ?, ?, ?)";
     public static final String MOST_VIEWED_URLS_QUERY = "select " + SHORTURL
