@@ -12,13 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping(value = "/api")
 public class UrlController {
 
     @Autowired
     UrlDaoImpl urlDao;
 
-    @RequestMapping(value = "/shorten", method = RequestMethod.POST)
+//    @RequestMapping(value = "/shorten", method = RequestMethod.POST)
+    @PostMapping
     public Url shortenedUrl(@RequestBody Url url) {
         long id = new Date().getTime();
         String encodedId = UrlShortner.encode(id);
