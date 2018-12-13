@@ -1,4 +1,4 @@
-package api.Util;
+package com.interswitch.urlshortener.api.Util;
 
 public class UrlShortner {
     public static final String ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";

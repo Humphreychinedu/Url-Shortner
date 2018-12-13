@@ -1,6 +1,6 @@
-package api.Util;
+package com.interswitch.urlshortener.api.Util;
 
-import api.model.Url;
+import com.interswitch.urlshortener.api.model.Url;
 
 import org.springframework.jdbc.core.RowMapper;
 

@@ -1,4 +1,4 @@
-package api.model;
+package com.interswitch.urlshortener.api.model;
 
 public class Url {
     private String shortUrl;

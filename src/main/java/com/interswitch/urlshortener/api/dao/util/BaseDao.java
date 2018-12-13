@@ -1,6 +1,6 @@
-package api.dao.util;
+package com.interswitch.urlshortener.api.dao.util;
 
-import api.model.Url;
+import com.interswitch.urlshortener.api.model.Url;
 
 import java.util.List;
 import java.util.Map;

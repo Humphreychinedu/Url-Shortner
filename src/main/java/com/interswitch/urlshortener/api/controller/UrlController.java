@@ -1,25 +1,23 @@
-package api.controller;
+package com.interswitch.urlshortener.api.controller;
 
-import api.Util.UrlShortner;
-import api.dao.impl.UrlDaoImpl;
-import api.dao.util.UrlDao;
+import com.interswitch.urlshortener.api.Util.UrlShortner;
+import com.interswitch.urlshortener.api.dao.impl.UrlDaoImpl;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import api.model.Url;
+import com.interswitch.urlshortener.api.model.Url;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/api")
+@RequestMapping(value = "/api/v1")
 public class UrlController {
 
     @Autowired
     UrlDaoImpl urlDao;
 
-//    @RequestMapping(value = "/shorten", method = RequestMethod.POST)
-    @PostMapping
+    @RequestMapping(value = "/shorten", method = RequestMethod.POST)
     public Url shortenedUrl(@RequestBody Url url) {
         long id = new Date().getTime();
         String encodedId = UrlShortner.encode(id);

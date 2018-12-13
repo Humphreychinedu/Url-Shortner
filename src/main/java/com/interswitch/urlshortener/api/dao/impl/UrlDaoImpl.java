@@ -1,9 +1,9 @@
-package api.dao.impl;
+package com.interswitch.urlshortener.api.dao.impl;
 
-import api.Util.UrlMapper;
-import api.dao.util.Constant;
-import api.dao.util.UrlDao;
-import api.model.Url;
+import com.interswitch.urlshortener.api.Util.UrlMapper;
+import com.interswitch.urlshortener.api.dao.util.Constant;
+import com.interswitch.urlshortener.api.dao.util.UrlDao;
+import com.interswitch.urlshortener.api.model.Url;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

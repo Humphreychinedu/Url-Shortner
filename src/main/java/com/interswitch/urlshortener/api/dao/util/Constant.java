@@ -1,4 +1,4 @@
-package api.dao.util;
+package com.interswitch.urlshortener.api.dao.util;
 
 public class Constant {
 

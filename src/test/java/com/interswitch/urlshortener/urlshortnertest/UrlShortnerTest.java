@@ -1,6 +1,6 @@
 package com.interswitch.urlshortener.urlshortnertest;
 
-import api.Util.UrlShortner;
+import com.interswitch.urlshortener.api.Util.UrlShortner;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
